@@ -1,0 +1,36 @@
+footer {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.heading {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  max-width: 70vw;
+  font-size: 2vmax;
+  color: #324467;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph {
+  display: block;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw;
+  color: #3e5480;
+}
+
+a {
+  color: #3366cc;
+}
