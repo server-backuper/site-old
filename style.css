@@ -51,5 +51,5 @@ a {
 }
 
 .small {
-  font-size: 1vmin;
+  font-size: 1vmin !important;
 }

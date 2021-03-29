@@ -20,3 +20,20 @@ window.onload = () => {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('https://api.server-backuper.ml/stats/accidents').then(r => r.text()).then(accidents => {
+    try {
+      document.getElementById('stats-accidents').textContent = accidents;
+    } catch (e) {
+      console.error(e);
+    }
+  });
+  fetch('https://api.server-backuper.ml/stats/serversCount').then(r => r.text()).then(servers => {
+    try {
+      document.getElementById('stats-server-count').textContent = servers;
+    } catch (e) {
+      console.error(e);
+    }
+  });
+});
