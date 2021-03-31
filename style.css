@@ -62,3 +62,22 @@ a {
 .small {
   font-size: 1vmin !important;
 }
+
+#cookie-notice {
+  height: 10vh;
+  width: 30vw;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  display: table;
+  background-color: crimson;
+  border-top-right-radius: 1vmin;
+}
+
+#sweet-cookie {
+  display: table-cell;
+  height: 10vh;
+  position: relative;
+  left: 2vmin;
+  bottom: 2vmin;
+}
