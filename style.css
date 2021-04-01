@@ -9,7 +9,6 @@ footer {
 body {
   overflow-x: hidden;
   font-size: 2vmin;
-  transform: rotate(180deg);
 }
 
 .text {
