@@ -22,14 +22,14 @@ window.onload = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('https://api.server-backuper.ml/stats/accidents').then(r => r.text()).then(accidents => {
+  fetch('https://api.server-backuper.cloud/stats/accidents').then(r => r.text()).then(accidents => {
     try {
       document.getElementById('stats-accidents').textContent = accidents;
     } catch (e) {
       console.error(e);
     }
   });
-  fetch('https://api.server-backuper.ml/stats/serversCount').then(r => r.text()).then(servers => {
+  fetch('https://api.server-backuper.cloud/stats/serversCount').then(r => r.text()).then(servers => {
     try {
       document.getElementById('stats-server-count').textContent = servers;
     } catch (e) {
