@@ -27,6 +27,7 @@ a {
 }
 
 .mini-heading {
+  display: block;
   font-family: 'Poppins', sans-serif;
   color: #324467;
   text-align: center;
@@ -37,6 +38,7 @@ a {
 
 .small-heading {
   font-family: 'Poppins', sans-serif;
+  display: block;
   color: #324467;
   text-align: center;
   margin-left: auto;
