@@ -36,4 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error(e);
     }
   });
+  fetch('https://api.server-backuper.cloud/stats/memberCount').then(r => r.text()).then(members => {
+    try {
+      document.getElementById('stats-member-count').textContent = members;
+    } catch (e) {
+      console.error(e);
+    }
 });
