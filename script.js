@@ -42,4 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
       console.error(e);
     }
+  });
 });
