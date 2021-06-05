@@ -1,57 +1,232 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yay</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js" type="module"></script>
-  <title>Server Backuper | Home</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="fonts.css">
-  <meta name="og:image" content="kitten.jpg" />
-  <meta name="og:url" content="https://server-backuper.cloud" />
-  <meta name="og:site_name" content="Server Backuper" />
-  <meta name="og:title" content="Server Backuper | Home" />
-</head>
-
-<body>
-  <br>
-  <br>
-  <br>
-  <br>
-  <strong class="heading">Server Backuper</strong>
-  <div class="text">
-    <br>
-    <br>
-    If you own a large Discord server, you might have promoted someone to administrator or moderator, but they nuked
-    your server.
-    Stop raids, <a
-      href="https://discord.com/oauth2/authorize?client_id=797792817983389726&permissions=19584&scope=bot">invite</a>
-    Server Backuper!
-    <br>
-    <br>
-    Join our Discord <a href="https://discord.com/invite/xzpcXYz6yK">server</a> for support!
-    <br>
-    <br>
-    Also see <a href="https://github.com/server-backuper/server-backuper">our Github</a>!
-    <br>
-    <br>
-    <br>
-    <br>
-    <strong class="small-heading">Our stats</strong>
-    <br>
-    <br>
-    <strong id="stats-accidents">Unknown</strong> possible raid attempts detected
-    <br>
-    <strong id="stats-server-count">Unknown</strong> servers protected
-    <br>
-    <strong id="stats-member-count">Unknown</strong> total members
-    <br>
-    <br>
-    <br>
-  </div>
-</body>
-
+  <body class="bg-light text-center text-dark">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex">
+      <div class="container-fluid">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          class="ms-1 me-3 feather text-dark navbarBrand"
+        >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datasets">Datasets</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://discord.com/invite/xzpcXYz6yK"
+                rel="noopener noreferrer external"
+              >
+                Support server
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Source code</a>
+            </li>
+          </ul>
+          <div id="search-container"></div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <h1>It's a header</h1>
+    <br />
+    <main class="w-50 m-auto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean
+      euismod elementum. Tortor condimentum lacinia quis vel eros donec ac odio.
+      Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices
+      gravida dictum fusce ut placerat orci nulla pellentesque dignissim.
+      Habitant morbi tristique senectus et netus et. Donec ultrices tincidunt
+      arcu non sodales neque sodales ut. Hendrerit dolor magna eget est lorem.
+      Sed elementum tempus egestas sed. Sed blandit libero volutpat sed cras
+      ornare arcu dui vivamus. Semper risus in hendrerit gravida rutrum quisque
+      non tellus. Pellentesque massa placerat duis ultricies lacus. Vel pretium
+      lectus quam id leo. Magna etiam tempor orci eu lobortis. Viverra
+      suspendisse potenti nullam ac tortor vitae purus faucibus. In vitae turpis
+      massa sed. Tincidunt tortor aliquam nulla facilisi cras fermentum.
+      Pellentesque adipiscing commodo elit at. Neque gravida in fermentum et
+      sollicitudin ac orci phasellus egestas. Vestibulum morbi blandit cursus
+      risus at ultrices mi. Porta lorem mollis aliquam ut porttitor leo a diam
+      sollicitudin. Vitae aliquet nec ullamcorper sit amet risus. Consequat
+      semper viverra nam libero. Nullam eget felis eget nunc lobortis mattis
+      aliquam faucibus purus. Dolor purus non enim praesent elementum facilisis
+      leo vel fringilla. Elit ut aliquam purus sit amet luctus venenatis.
+      Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. A cras
+      semper auctor neque vitae tempus quam. Nisl pretium fusce id velit ut
+      tortor pretium. Ultrices mi tempus imperdiet nulla malesuada pellentesque
+      elit eget gravida. Lacus laoreet non curabitur gravida arcu ac. Turpis
+      nunc eget lorem dolor sed viverra ipsum nunc aliquet. Eget egestas purus
+      viverra accumsan. Dolor sed viverra ipsum nunc aliquet bibendum enim
+      facilisis. Lorem ipsum dolor sit amet consectetur adipiscing elit ut
+      aliquam. Morbi non arcu risus quis varius quam quisque. Diam ut venenatis
+      tellus in metus. Suspendisse faucibus interdum posuere lorem ipsum dolor.
+      Morbi tempus iaculis urna id volutpat lacus. Mauris ultrices eros in
+      cursus turpis massa tincidunt dui. Nisl nunc mi ipsum faucibus vitae
+      aliquet nec ullamcorper. Molestie ac feugiat sed lectus vestibulum mattis
+      ullamcorper velit. Egestas diam in arcu cursus euismod quis. Sed augue
+      lacus viverra vitae congue eu consequat ac felis. Lorem mollis aliquam ut
+      porttitor leo. Ut tortor pretium viverra suspendisse potenti nullam ac.
+      Tincidunt ornare massa eget egestas purus viverra accumsan. Nunc sed velit
+      dignissim sodales ut eu sem. Malesuada proin libero nunc consequat
+      interdum varius sit amet mattis. Enim nulla aliquet porttitor lacus luctus
+      accumsan. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus
+      pellentesque. Diam maecenas sed enim ut. Lorem dolor sed viverra ipsum
+      nunc aliquet. Volutpat diam ut venenatis tellus in metus vulputate eu.
+      Maecenas sed enim ut sem viverra aliquet eget. Eu volutpat odio facilisis
+      mauris sit amet. Praesent elementum facilisis leo vel fringilla est
+      ullamcorper eget nulla. Lacinia quis vel eros donec ac odio tempor orci
+      dapibus. Consectetur a erat nam at. Sem fringilla ut morbi tincidunt augue
+      interdum. Adipiscing enim eu turpis egestas. Gravida rutrum quisque non
+      tellus orci. Eu ultrices vitae auctor eu augue ut. Urna cursus eget nunc
+      scelerisque viverra mauris in aliquam. A pellentesque sit amet porttitor
+      eget. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in.
+      Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Nisl nunc mi
+      ipsum faucibus vitae aliquet nec. Pellentesque adipiscing commodo elit at.
+      Sit amet dictum sit amet justo. Eu ultrices vitae auctor eu augue ut
+      lectus arcu bibendum. Amet mauris commodo quis imperdiet massa tincidunt
+      nunc. Amet est placerat in egestas erat imperdiet sed euismod nisi. Nulla
+      porttitor massa id neque aliquam. Ac ut consequat semper viverra. Dolor
+      purus non enim praesent elementum facilisis leo vel fringilla. Morbi
+      tristique senectus et netus. Pellentesque nec nam aliquam sem et. Magna
+      sit amet purus gravida quis. Vestibulum morbi blandit cursus risus at
+      ultrices. Penatibus et magnis dis parturient montes nascetur ridiculus.
+      Augue eget arcu dictum varius duis. At erat pellentesque adipiscing
+      commodo elit at imperdiet. Erat imperdiet sed euismod nisi porta lorem
+      mollis. Tellus molestie nunc non blandit massa enim. Nunc faucibus a
+      pellentesque sit amet porttitor. Tellus orci ac auctor augue. Viverra
+      tellus in hac habitasse platea. Vulputate mi sit amet mauris commodo quis
+      imperdiet massa. Ornare lectus sit amet est. Fermentum et sollicitudin ac
+      orci phasellus. Aliquam nulla facilisi cras fermentum odio eu feugiat
+      pretium nibh. Donec ultrices tincidunt arcu non. Pulvinar etiam non quam
+      lacus suspendisse faucibus interdum posuere. Et tortor at risus viverra
+      adipiscing at. Arcu non odio euismod lacinia. Sed vulputate mi sit amet.
+      Aliquam id diam maecenas ultricies mi. Nulla aliquet enim tortor at. Nunc
+      sed id semper risus in hendrerit gravida. Maecenas volutpat blandit
+      aliquam etiam erat velit scelerisque. Mattis enim ut tellus elementum.
+      Nisl purus in mollis nunc sed id semper risus in. Et netus et malesuada
+      fames. Consectetur purus ut faucibus pulvinar elementum integer enim.
+      Suspendisse interdum consectetur libero id faucibus nisl. Cras sed felis
+      eget velit aliquet sagittis id. Fermentum dui faucibus in ornare quam.
+      Habitant morbi tristique senectus et netus. Imperdiet dui accumsan sit
+      amet nulla facilisi morbi tempus. Non curabitur gravida arcu ac tortor
+      dignissim. Rhoncus mattis rhoncus urna neque viverra justo. Nisl vel
+      pretium lectus quam id leo. In tellus integer feugiat scelerisque varius
+      morbi enim. Tellus cras adipiscing enim eu. Aliquet sagittis id
+      consectetur purus ut faucibus pulvinar elementum. Nunc eget lorem dolor
+      sed. Sed blandit libero volutpat sed cras ornare arcu dui. Sollicitudin
+      tempor id eu nisl nunc mi. Purus gravida quis blandit turpis cursus. Et
+      tortor at risus viverra adipiscing at in tellus integer. Euismod in
+      pellentesque massa placerat duis ultricies lacus sed. Ante in nibh mauris
+      cursus mattis molestie a iaculis at. Habitasse platea dictumst vestibulum
+      rhoncus est pellentesque elit ullamcorper. Scelerisque felis imperdiet
+      proin fermentum. At augue eget arcu dictum varius duis at. Donec enim diam
+      vulputate ut pharetra. Senectus et netus et malesuada fames ac turpis
+      egestas. Purus ut faucibus pulvinar elementum integer enim. Duis ultricies
+      lacus sed turpis. Mauris vitae ultricies leo integer malesuada nunc vel
+      risus commodo. Pellentesque eu tincidunt tortor aliquam nulla facilisi.
+      Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Cursus
+      risus at ultrices mi tempus imperdiet. Ut consequat semper viverra nam
+      libero justo. Ridiculus mus mauris vitae ultricies leo integer malesuada.
+      Eget felis eget nunc lobortis mattis. Lorem donec massa sapien faucibus et
+      molestie ac feugiat. Amet massa vitae tortor condimentum lacinia quis.
+      Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Lorem
+      ipsum dolor sit amet consectetur adipiscing. Bibendum arcu vitae elementum
+      curabitur vitae nunc sed velit dignissim. Sed viverra ipsum nunc aliquet.
+      Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Nec dui
+      nunc mattis enim. Vitae sapien pellentesque habitant morbi tristique
+      senectus et netus. Tortor condimentum lacinia quis vel eros donec ac.
+      Consectetur adipiscing elit pellentesque habitant morbi tristique. In
+      tellus integer feugiat scelerisque varius. Sit amet nulla facilisi morbi
+      tempus. Quis imperdiet massa tincidunt nunc. Euismod lacinia at quis risus
+      sed vulputate odio ut enim. Ipsum consequat nisl vel pretium. Sit amet
+      facilisis magna etiam tempor orci eu. Iaculis at erat pellentesque
+      adipiscing. Nulla aliquet porttitor lacus luctus accumsan tortor posuere
+      ac ut. Nunc sed blandit libero volutpat sed cras ornare. Donec et odio
+      pellentesque diam volutpat commodo sed egestas. Proin libero nunc
+      consequat interdum varius sit. Eu feugiat pretium nibh ipsum. Mauris
+      pharetra et ultrices neque ornare aenean euismod. Nec feugiat in fermentum
+      posuere urna nec tincidunt praesent semper. Elementum tempus egestas sed
+      sed risus pretium quam vulputate dignissim. Cursus metus aliquam eleifend
+      mi in. Eget velit aliquet sagittis id consectetur purus ut. Purus semper
+      eget duis at tellus at urna. Eros in cursus turpis massa. Etiam erat velit
+      scelerisque in dictum. Diam sit amet nisl suscipit adipiscing bibendum est
+      ultricies. Proin nibh nisl condimentum id venenatis a condimentum vitae.
+      In aliquam sem fringilla ut morbi. Et malesuada fames ac turpis. A cras
+      semper auctor neque vitae tempus quam pellentesque. Congue quisque egestas
+      diam in. Ultrices sagittis orci a scelerisque purus semper. Est
+      pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Egestas
+      fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate
+      sapien. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+      Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar
+      pellentesque. Facilisis gravida neque convallis a cras semper auctor. Ut
+      aliquam purus sit amet luctus venenatis lectus. Magna ac placerat
+      vestibulum lectus. Mauris a diam maecenas sed enim ut sem. Sapien et
+      ligula ullamcorper malesuada. At imperdiet dui accumsan sit amet nulla
+      facilisi. Fermentum iaculis eu non diam phasellus vestibulum. Aliquam ut
+      porttitor leo a diam sollicitudin tempor id. Accumsan tortor posuere ac
+      ut. Odio aenean sed adipiscing diam donec adipiscing tristique. Tellus at
+      urna condimentum mattis pellentesque id nibh tortor. Mi sit amet mauris
+      commodo quis. Proin nibh nisl condimentum id venenatis. Morbi tristique
+      senectus et netus. Aenean sed adipiscing diam donec adipiscing tristique
+      risus nec feugiat. Tellus cras adipiscing enim eu turpis egestas pretium
+      aenean. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+      Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec
+      sagittis. Sit amet nisl purus in mollis. Natoque penatibus et magnis dis
+      parturient montes nascetur ridiculus mus. Id donec ultrices tincidunt arcu
+      non sodales neque sodales ut. Dis parturient montes nascetur ridiculus mus
+      mauris vitae ultricies. Tempus quam pellentesque nec nam aliquam sem et
+      tortor. Risus at ultrices mi tempus imperdiet. Libero nunc consequat
+      interdum varius. Adipiscing enim eu turpis egestas pretium aenean pharetra
+      magna. Velit egestas dui id ornare arcu odio ut. Enim neque volutpat ac
+      tincidunt. Tempus egestas sed sed risus pretium quam vulputate dignissim
+      suspendisse. Justo donec enim diam vulputate ut pharetra. Est ante in nibh
+      mauris cursus mattis molestie. Ultricies lacus sed turpis tincidunt id
+      aliquet risus feugiat in. Varius sit amet mattis vulputate enim nulla.
+      Ipsum nunc aliquet bibendum enim facilisis gravida neque. Nunc non blandit
+      massa enim nec dui nunc. Posuere ac ut consequat semper viverra nam libero
+      justo laoreet. Eget nulla facilisi etiam dignissim diam quis enim. Diam
+      vulputate ut pharetra sit amet. Nisi vitae suscipit tellus mauris a diam.
+    </main>
+    <br />
+    <footer class="footer">
+      <span style="transform: rotate(60deg)">&copy;</span> 2021,
+      <a href="https://sly-little-fox.ru">Sly-Little-Fox</a>
+    </footer>
+    <section id="particles"></section>
+    <script src="index.js" type="module"></script>
+    <script src="./lib/bootstrap.bundle.min.js" type="module"></script>
+  </body>
 </html>
