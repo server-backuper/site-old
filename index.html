@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' data:; font-src data:; connect-src https://api.server-backuper.cloud/stats/memberCount; upgrade-insecure-requests"
+      content="default-src 'self'; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; connect-src 'self' api.server-backuper.cloud; upgrade-insecure-requests"
     />
     <meta
       http-equiv="X-Content-Security-Policy"
-      content="default-src 'self' data:; font-src data:; connect-src https://api.server-backuper.cloud/stats/memberCount; upgrade-insecure-requests"
+      content="default-src 'self'; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; connect-src 'self' api.server-backuper.cloud; upgrade-insecure-requests"
     />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
@@ -18,11 +18,18 @@
     <script src="script.js" type="module"></script>
     <title>Server Backuper | Home</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fonts.css" />
     <meta name="og:image" content="kitten.jpg" />
     <meta name="og:url" content="https://server-backuper.cloud" />
     <meta name="og:site_name" content="Server Backuper" />
     <meta name="og:title" content="Server Backuper | Home" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
